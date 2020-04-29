@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "646799596844",
+    "firebase_url": "https://fir-chatapp-d3848.firebaseio.com",
+    "project_id": "fir-chatapp-d3848",
+    "storage_bucket": "fir-chatapp-d3848.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646799596844:android:ece6fe5446b47e8c01a089",
+        "android_client_info": {
+          "package_name": "com.example.firebasechatuppgift"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646799596844-c8dg9elss6111iptgdh6ia6uvf609hvq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasechatuppgift",
+            "certificate_hash": "ffe4b6b8267ba6360f8ba8f7e3af0b491bc81695"
+          }
+        },
+        {
+          "client_id": "646799596844-48h4rhalljkvvd2hhr8jb5v85j2sfv2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPWVRrLZfGl69MBWYhVtdvLc-QpDTNneY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646799596844-48h4rhalljkvvd2hhr8jb5v85j2sfv2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
