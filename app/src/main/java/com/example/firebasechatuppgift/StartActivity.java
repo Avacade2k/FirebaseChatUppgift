@@ -17,12 +17,8 @@ public class StartActivity extends AppCompatActivity {
     FirebaseUser firebaseUser;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
-
-        getSupportActionBar().setTitle("Firebase chat app");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    protected void onStart() {
+        super.onStart();
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -32,6 +28,16 @@ public class StartActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_start);
+
+        getSupportActionBar().setTitle("Firebase chat");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         login = (Button)findViewById(R.id.loginBtn);
         register = (Button)findViewById(R.id.registerBtn);
