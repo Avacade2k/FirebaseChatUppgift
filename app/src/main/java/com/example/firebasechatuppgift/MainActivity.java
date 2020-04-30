@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -90,6 +92,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         getSupportActionBar().setTitle("Firebase chat");
+
+        chatList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent (getApplicationContext(), ChatActivity.class);
+                intent.putExtra("selected_topic", ((TextView)view).getText().toString());
+                intent.putExtra("user_name", usernameString);
+                startActivity(intent);
+            }
+        });
 
     }
 
